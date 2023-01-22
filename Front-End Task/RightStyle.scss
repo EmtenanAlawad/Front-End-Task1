@@ -1,0 +1,190 @@
+@import "variables";
+  *{
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body{
+    background:$background-color;
+    background:$background-radial-gradient;
+    direction: rtl;}
+
+    .container-box{
+    font-family: $font-family;
+    font-style: $font-style;
+    position: fixed;
+    top: 1.5rem;
+    left: 8rem;
+    display: table;
+    width: 60em;
+    border-radius: 2em;
+    background: $bg-left-color;
+
+        .left-container{
+           width: 30em;
+           height: 34em;
+           padding: 0rem 2rem 2rem 5rem;
+           float: right;
+           display: block;
+           border-radius: 0em 2em 2em 0em;
+           background-color: $bg-left-color;
+            .left-container-title{
+                height: 0.7em;
+                font-size: 2.1em;
+                line-height: 1em;
+                span{
+                    color:$pink-color;
+                }
+                }
+                .left-container-paragraph{
+                    font-size: 0.8em;
+                    line-height: 1em;
+                    letter-spacing: 0.01em;   }
+
+                    .form-fields{
+                        display: table;
+                        padding: 1rem 0.3rem 0.7rem 0.3rem;
+                        
+                          select{
+                            @include fields(black);
+                        }
+                        input{
+                            @include fields( #828282);
+                        }
+                        .form-group{
+                            padding: .7rem 1.2rem;
+                            height: 1.5em;
+                            margin-bottom: 2rem;
+                        }
+                        
+                    }
+                    .submit-button{
+                        @extend .button-basic;
+                        background: $pink-color;
+                        margin-bottom: 1.5rem;
+                        padding: 0.5rem;
+                        margin-top: -1.5rem;
+                        margin-right: 1.5rem;
+                    }
+                  
+        .contact{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0rem;
+            gap: 1em;
+            flex: none;
+
+        .contact-box{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0rem;
+            gap: 0.2em;   
+            width: 6.8em;
+            height: 2em;
+            flex: none;
+            margin-right: 0rem;
+        .contact-box-text{
+            flex: none;
+            h5{
+            line-height: 0.5em;
+            font-size: 0.8em;
+            letter-spacing: 0.02em;
+            margin: 1rem 0rem 0.1rem 0rem;
+           }
+        p{
+        font-size: 0.7em;
+        line-height: 0em;
+        color:$pink-color;
+        }
+        }
+        }
+    }
+            }
+           
+        .right-container{
+            width: 30%;
+            height: 34em;
+            float: left;
+            display: block;
+            // padding: 40px 24px 35px 25px;
+            border-radius: 2em 0em 0em 2em;
+            background: $bg-right-color;
+        }
+        .map-container{
+            position: absolute;
+            width: 23em;
+            height: 28em;
+            right: 31em;
+            top: 3.5em;
+            background: url(map.png);
+        }
+        }     
+.button-basic{
+    color:$bg-left-color;
+    outline: none;
+    border: none;
+     width: 27.86em;
+     height: 2.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-box{
+        margin-left: -6rem;
+        margin-top: 2rem;
+    }
+}
+
+
+// @media screen and(max-width:320px){
+//     .container-box{
+//         position:relative;
+//         display: table;
+//         margin-right: -7rem;
+//         width: 80%;
+//         height: 35em;
+//    .map-container{
+//     visibility: hidden;
+//    } 
+//    .left-container{
+//     width: 50%;
+//    .left-container-title{
+//     width: 65%;
+//     margin-right: 19rem;
+//     }
+//     .left-container-paragraph{
+//          width: 60%;
+//          margin-right:19rem;
+//          height: 20em;
+//         }
+//         .form-fields{
+//             margin-top: -13rem;
+//             margin-right: 6rem;
+//             // width: auto;
+//             .form-group{
+//                 width: 30%;
+//             }
+//         }
+//         .contact-box{
+//             padding-left: 5rem;
+//         }
+        
+//         .contact{
+//             margin-left: -4rem;
+//             padding-right: -2rem;
+//         }
+//     }
+//    .right-container{
+//     width: 15%;
+//     margin-top: 0rem;
+//     height: 35em;
+//    }
+  
+  
+//     .button-basic{
+//     margin-right: 3rem;
+
+// }
+    
+// }
+// }

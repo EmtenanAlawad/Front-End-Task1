@@ -1,0 +1,19 @@
+$bg-right-color:#183A4A;;
+$bg-left-color: white;
+$pink-color:#DD5471;
+$font-family:'Montserrat';
+$font-style: normal;
+$background-color: rgb(213,166,206);
+$background-radial-gradient: radial-gradient(circle, rgba(213,166,206,1) 38%, rgba(166,180,213,1) 92%, rgba(172,183,197,1) 100%);
+
+@mixin fields($color) {
+    border: 0.12em solid  #E0E0E0;
+    outline-color:$pink-color;
+    font-size: 0.8em;
+    padding: 0.7rem;
+    width: 29em;
+    color:$color;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;  }
+
+    

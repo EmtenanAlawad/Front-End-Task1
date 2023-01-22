@@ -1,0 +1,144 @@
+* {
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(213, 166, 206);
+  background: radial-gradient(circle, rgb(213, 166, 206) 38%, rgb(166, 180, 213) 92%, rgb(172, 183, 197) 100%);
+  direction: rtl;
+}
+
+.container-box {
+  font-family: "Montserrat";
+  font-style: normal;
+  position: fixed;
+  top: 1.5rem;
+  left: 8rem;
+  display: table;
+  width: 60em;
+  border-radius: 2em;
+  background: white;
+}
+.container-box .left-container {
+  width: 30em;
+  height: 34em;
+  padding: 0rem 2rem 2rem 5rem;
+  float: right;
+  display: block;
+  border-radius: 0em 2em 2em 0em;
+  background-color: white;
+}
+.container-box .left-container .left-container-title {
+  height: 0.7em;
+  font-size: 2.1em;
+  line-height: 1em;
+}
+.container-box .left-container .left-container-title span {
+  color: #DD5471;
+}
+.container-box .left-container .left-container-paragraph {
+  font-size: 0.8em;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+}
+.container-box .left-container .form-fields {
+  display: table;
+  padding: 1rem 0.3rem 0.7rem 0.3rem;
+}
+.container-box .left-container .form-fields select {
+  border: 0.12em solid #E0E0E0;
+  outline-color: #DD5471;
+  font-size: 0.8em;
+  padding: 0.7rem;
+  width: 29em;
+  color: black;
+  margin-top: -1.5rem;
+  margin-left: -1.5rem;
+}
+.container-box .left-container .form-fields input {
+  border: 0.12em solid #E0E0E0;
+  outline-color: #DD5471;
+  font-size: 0.8em;
+  padding: 0.7rem;
+  width: 29em;
+  color: #828282;
+  margin-top: -1.5rem;
+  margin-left: -1.5rem;
+}
+.container-box .left-container .form-fields .form-group {
+  padding: 0.7rem 1.2rem;
+  height: 1.5em;
+  margin-bottom: 2rem;
+}
+.container-box .left-container .submit-button {
+  background: #DD5471;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  margin-top: -1.5rem;
+  margin-right: 1.5rem;
+}
+.container-box .left-container .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0rem;
+  gap: 1em;
+  flex: none;
+}
+.container-box .left-container .contact .contact-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem;
+  gap: 0.2em;
+  width: 6.8em;
+  height: 2em;
+  flex: none;
+  margin-right: 0rem;
+}
+.container-box .left-container .contact .contact-box .contact-box-text {
+  flex: none;
+}
+.container-box .left-container .contact .contact-box .contact-box-text h5 {
+  line-height: 0.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.02em;
+  margin: 1rem 0rem 0.1rem 0rem;
+}
+.container-box .left-container .contact .contact-box .contact-box-text p {
+  font-size: 0.7em;
+  line-height: 0em;
+  color: #DD5471;
+}
+.container-box .right-container {
+  width: 30%;
+  height: 34em;
+  float: left;
+  display: block;
+  border-radius: 2em 0em 0em 2em;
+  background: #183A4A;
+}
+.container-box .map-container {
+  position: absolute;
+  width: 23em;
+  height: 28em;
+  right: 31em;
+  top: 3.5em;
+  background: url(map.png);
+}
+
+.button-basic, .container-box .left-container .submit-button {
+  color: white;
+  outline: none;
+  border: none;
+  width: 27.86em;
+  height: 2.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-box {
+    margin-left: -6rem;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=RightStyle.css.map */
